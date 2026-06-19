@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemare Móveis | Design Escandinavo & Atacado Corporativo</title>
+    <!-- Tailwind CSS para estilização ágil e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para ícones premium -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Inter para legibilidade e visual elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1c1714',       /* Charcoal Quente / Ébano */
+                        secondary: '#2e2622',     /* Terracota Escura / Argila */
+                        accent: '#c59a78',        /* Ouro Linho / Palha Seca */
+                        accentHover: '#b38663',   /* Bronze Avelã */
+                        success: '#7d8f82',       /* Verde Sálvia / Natural */
+                        bgLight: '#faf7f2',       /* Off-White Quente / Linho Cru */
+                        cardBg: '#ffffff'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #2e2622;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #c59a78;
+            border-radius: 3px;
+        }
+        .glow-effect {
+            box-shadow: 0 0 15px rgba(197, 154, 120, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-bgLight text-stone-800 font-sans antialiased custom-scrollbar">
+
+    <!-- Topbar Focado em Qualificação de Tráfego e Conversão -->
+    <div class="bg-primary text-stone-300 text-[11px] py-2.5 border-b border-stone-850 tracking-wider">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center">
+                <span><i class="fa-solid fa-store text-accent mr-1"></i> Showroom Físico em Pinheiros - São Paulo/SP</span>
+                <span class="hidden sm:inline">|</span>
+                <span><i class="fa-solid fa-truck text-accent mr-1"></i> Entregas e Logística Própria Segurada Nacional</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="font-bold text-white"><i class="fa-solid fa-basket-shopping text-accent mr-1"></i> Faturamento Mínimo B2B: R$ 2.000</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Principal da Marca Lemare -->
+    <header class="bg-white/95 sticky top-0 z-50 shadow-md border-b border-stone-100 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo Lemare Móveis -->
+            <div class="flex items-center gap-3">
+                <div class="bg-gradient-to-br from-primary to-secondary text-white p-2.5 rounded-lg flex items-center justify-center border border-accent/25">
+                    <i class="fa-solid fa-chair text-xl text-accent"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-widest text-primary">LEMARE MÓVEIS</span>
+                    <span class="block text-[8px] uppercase tracking-[0.25em] text-stone-500 font-bold">Hygge Comércio e Decorações LTDA</span>
+                </div>
+            </div>
+
+            <!-- Dados Operacionais para Google Ads Credibility -->
+            <div class="hidden lg:flex flex-col items-end">
+                <span class="text-xs font-semibold text-stone-500">CNPJ: 12.383.505/0001-61</span>
+                <div class="flex items-center gap-1.5 mt-0.5">
+                    <span class="h-2 w-2 rounded-full bg-success animate-pulse"></span>
+                    <span class="text-[10px] font-bold text-success uppercase tracking-wider">Showroom Ativo • Desde 2010</span>
+                </div>
+            </div>
+            
+            <a href="#contato" class="bg-accent hover:bg-accentHover text-white px-5 py-2.5 rounded-md text-xs font-bold uppercase tracking-widest transition-all flex items-center gap-2 glow-effect">
+                <i class="fa-solid fa-file-pdf"></i> Catálogo Atacado 2026
+            </a>
+        </div>
+    </header>
+
+    <!-- Seção de Serviços e Linhas de Produtos em Destaque no Topo -->
+    <section class="bg-secondary border-b border-stone-900 py-6 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center md:text-left mb-4">
+                <span class="text-xs font-bold text-accent uppercase tracking-widest block mb-1">Curadoria de Alta Performance Moveleira</span>
+                <h2 class="text-base font-extrabold text-white flex items-center justify-center md:justify-start gap-2">
+                    <i class="fa-solid fa-circle-nodes text-accent"></i> Nossas Linhas de Atendimento e Fornecimento:
+                </h2>
+            </div>
+            
+            <!-- Grid de Atalhos Rápidos -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                <!-- Categoria 1 -->
+                <a href="#simulador" class="bg-primary/50 p-4 rounded-lg border border-stone-800 hover:border-accent hover:shadow-lg transition-all duration-300 group">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2.5 bg-secondary text-stone-300 rounded-md group-hover:bg-accent group-hover:text-primary transition-all">
+                            <i class="fa-solid fa-couch text-base"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-extrabold text-white group-hover:text-accent transition-all">Móveis de Design</h4>
+                            <p class="text-[9px] text-stone-400 mt-0.5">Mesas, cadeiras e sofás contemporâneos</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Categoria 2 -->
+                <a href="#simulador" class="bg-primary/50 p-4 rounded-lg border border-stone-800 hover:border-accent hover:shadow-lg transition-all duration-300 group">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2.5 bg-secondary text-stone-300 rounded-md group-hover:bg-accent group-hover:text-primary transition-all">
+                            <i class="fa-solid fa-screwdriver-wrench text-base"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-extrabold text-white group-hover:text-accent transition-all">Ferragens & Componentes</h4>
+                            <p class="text-[9px] text-stone-400 mt-0.5">Ferragens técnicas e acessórios</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Categoria 3 -->
+                <a href="#simulador" class="bg-primary/50 p-4 rounded-lg border border-stone-800 hover:border-accent hover:shadow-lg transition-all duration-300 group">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2.5 bg-secondary text-stone-300 rounded-md group-hover:bg-accent group-hover:text-primary transition-all">
+                            <i class="fa-solid fa-hotel text-base"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-extrabold text-white group-hover:text-accent transition-all">Projetos Corporativos</h4>
+                            <p class="text-[9px] text-stone-400 mt-0.5">Soluções para escritórios e hotéis</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Categoria 4 -->
+                <a href="#simulador" class="bg-primary/50 p-4 rounded-lg border border-stone-800 hover:border-accent hover:shadow-lg transition-all duration-300 group">
+                    <div class="flex items-center gap-3">
+                        <div class="p-2.5 bg-secondary text-stone-300 rounded-md group-hover:bg-accent group-hover:text-primary transition-all">
+                            <i class="fa-solid fa-pen-ruler text-base"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-extrabold text-white group-hover:text-accent transition-all">Canal de Parceria</h4>
+                            <p class="text-[9px] text-stone-400 mt-0.5">Condições especiais para arquitetos</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section Focada em Campanhas de Atacado -->
+    <section class="relative bg-gradient-to-br from-[#1c1714] via-secondary to-[#100c0b] text-white overflow-hidden py-16 lg:py-24 border-b border-stone-900">
+        <!-- Textura de Fundo Minimalista -->
+        <div class="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#c59a78_1px,transparent_1px)] [background-size:20px_20px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Conteúdo Comercial Direto -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-accent/10 border border-accent/35 text-accent px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase">
+                        <i class="fa-solid fa-award"></i> Tradição em Alta Decoração • Desde 2010
+                    </div>
+                    
+                    <h1 class="text-3xl md:text-5xl font-black leading-tight tracking-tight text-white">
+                        Distribuição direta de móveis de design e ferragens para <span class="text-accent font-extrabold">revendedores, lojas de decoração e corporativo</span>.
+                    </h1>
+                    
+                    <p class="text-stone-300 text-sm md:text-base max-w-xl leading-relaxed">
+                        Abasteça seu showroom ou execute projetos corporativos de alto padrão com condições exclusivas direto da distribuidora. Garantia de curadoria estética, segurança de entrega e excelente lucratividade para a sua operação.
+                    </p>
+
+                    <!-- Benefícios Comerciais -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start gap-3">
+                            <span class="text-accent bg-accent/10 p-2 rounded-md mt-0.5"><i class="fa-solid fa-boxes-stacked"></i></span>
+                            <div>
+                                <h3 class="font-bold text-xs uppercase tracking-wider text-white">Pedido Mínimo de R$ 2.000</h3>
+                                <p class="text-[11px] text-stone-400">Flexibilidade operacional perfeita para manter seu estoque sempre atualizado.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-accent bg-accent/10 p-2 rounded-md mt-0.5"><i class="fa-solid fa-truck-fast"></i></span>
+                            <div>
+                                <h3 class="font-bold text-xs uppercase tracking-wider text-white">Faturamento Simples Nacional</h3>
+                                <p class="text-[11px] text-stone-400">Emissão fiscal simplificada, isentando burocracias pesadas na sua entrada fiscal.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-accent bg-accent/10 p-2 rounded-md mt-0.5"><i class="fa-solid fa-percent"></i></span>
+                            <div>
+                                <h3 class="font-bold text-xs uppercase tracking-wider text-white">Excelente Margem Comercial</h3>
+                                <p class="text-[11px] text-stone-400">Até 60% de lucratividade bruta na revenda de peças com assinatura estética de luxo.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-accent bg-accent/10 p-2 rounded-md mt-0.5"><i class="fa-solid fa-compass-drafting"></i></span>
+                            <div>
+                                <h3 class="font-bold text-xs uppercase tracking-wider text-white">Especificação Técnica Completa</h3>
+                                <p class="text-[11px] text-stone-400">Suporte a especificadores (arquitetos e designers) com modelos 3D e assessoria.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário de Leads Corporativos -->
+                <div class="lg:col-span-5" id="contato">
+                    <div class="bg-[#1f1a17] rounded-xl p-6 lg:p-8 text-stone-200 shadow-2xl border border-stone-800 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-2xl -mr-16 -mt-16"></div>
+                        <h3 class="text-xl font-black text-white tracking-tight relative z-10">Solicitar Catálogo e Condições</h3>
+                        <p class="text-xs text-stone-400 mt-1 mb-6 relative z-10">Seja parceiro oficial e receba imediatamente nossas tabelas com descontos e condições financeiras diferenciadas.</p>
+                        
+                        <form id="leadForm" onsubmit="handleFormSubmit(event)" class="space-y-4 relative z-10">
+                            <div>
+                                <label class="block text-[10px] font-extrabold text-stone-400 uppercase tracking-widest mb-1" for="name">Nome do Solicitante</label>
+                                <input class="w-full bg-secondary border border-stone-800 rounded-md px-4 py-2.5 text-xs text-white outline-none focus:border-accent transition-all" type="text" id="name" required placeholder="Ex: Maurício Lemare">
+                            </div>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-[10px] font-extrabold text-stone-400 uppercase tracking-widest mb-1" for="cnpj">CNPJ / CAU / CREA</label>
+                                    <input class="w-full bg-secondary border border-stone-800 rounded-md px-4 py-2.5 text-xs text-white outline-none focus:border-accent transition-all" type="text" id="cnpj" required placeholder="12.383.505/0001-61">
+                                </div>
+                                <div>
+                                    <label class="block text-[10px] font-extrabold text-stone-400 uppercase tracking-widest mb-1" for="whatsapp">WhatsApp Comercial</label>
+                                    <input class="w-full bg-secondary border border-stone-800 rounded-md px-4 py-2.5 text-xs text-white outline-none focus:border-accent transition-all" type="tel" id="whatsapp" required placeholder="(11) 3063-2017">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-[10px] font-extrabold text-stone-400 uppercase tracking-widest mb-1" for="segment">Atuação Comercial</label>
+                                <select class="w-full bg-secondary border border-stone-800 rounded-md px-4 py-2.5 text-xs text-stone-300 outline-none focus:border-accent transition-all" id="segment" required>
+                                    <option value="" disabled selected>Selecione sua atuação</option>
+                                    <option value="lojista">Lojista de Decoração e Móveis</option>
+                                    <option value="arquiteto">Arquiteto / Designer de Interiores</option>
+                                    <option value="corporativo">Hotéis / Construtoras / Escritórios</option>
+                                    <option value="revenda">Distribuidor e Revenda em Outro Estado</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="w-full bg-accent hover:bg-accentHover text-white py-3 rounded-md font-bold text-xs tracking-widest uppercase transition-all shadow-md transform active:scale-95 flex items-center justify-center gap-2 glow-effect">
+                                <i class="fa-solid fa-file-invoice-dollar"></i> Receber Portfólio de Atacado
+                            </button>
+                            
+                            <p class="text-[10px] text-center text-stone-500 mt-2">
+                                <i class="fa-solid fa-lock text-accent mr-1"></i> Seus dados corporativos estão seguros em conformidade com a LGPD.
+                            </p>
+                        </form>
+
+                        <!-- Mensagem de Sucesso (Form WhatsApp Redirect) -->
+                        <div id="successMessage" class="hidden text-center py-6 space-y-4">
+                            <div class="mx-auto w-12 h-12 bg-success/20 text-success rounded-full flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-white">Dados Recebidos com Sucesso!</h4>
+                                <p class="text-xs text-stone-400 mt-1">Nossa equipe comercial da Teodoro Sampaio já está separando sua tabela. Clique abaixo para iniciar o atendimento técnico via WhatsApp.</p>
+                            </div>
+                            <a id="successWhatsappLink" href="#" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-750 text-white px-5 py-2.5 rounded-md text-xs font-bold uppercase tracking-wider transition-all w-full justify-center shadow">
+                                <i class="fa-brands fa-whatsapp text-base"></i> Chamar Setor de Atacado no WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Proposta de Valor e Diferenciais Corporativos -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-accent font-extrabold text-xs tracking-widest uppercase">Curadoria Própria Premium</span>
+                <h2 class="text-3xl font-black text-primary tracking-tight mt-1">Vantagens de Comprar com a Lemare</h2>
+                <p class="text-stone-500 text-sm mt-3">Combinamos a agilidade de um faturamento industrial focado no Simples Nacional com a sofisticação de móveis e ferragens que transformam qualquer espaço em um refúgio acolhedor.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Diferencial 1 -->
+                <div class="bg-bgLight p-8 rounded-xl border border-stone-100 hover:shadow-lg transition-all">
+                    <div class="text-accent bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center text-lg font-bold mb-6">
+                        <i class="fa-solid fa-pencil-ruler"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-primary mb-3">Estética Hygge e Atemporal</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed">Móveis e ferragens selecionadas com paletas naturais, linhas fluidas e materiais nobres que atendem às mais altas exigências do design de interiores contemporâneo brasileiro.</p>
+                </div>
+                
+                <!-- Diferencial 2 -->
+                <div class="bg-bgLight p-8 rounded-xl border border-stone-100 hover:shadow-lg transition-all">
+                    <div class="text-accent bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center text-lg font-bold mb-6">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-primary mb-3">Preços Competitivos e Diretos</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed">Como importador e distribuidor de grandes marcas de ferragens e mobiliário, eliminamos as camadas de intermediários para garantir a melhor margem líquida para sua loja.</p>
+                </div>
+
+                <!-- Diferencial 3 -->
+                <div class="bg-bgLight p-8 rounded-xl border border-stone-100 hover:shadow-lg transition-all">
+                    <div class="text-accent bg-accent/10 w-12 h-12 rounded-lg flex items-center justify-center text-lg font-bold mb-6">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <h3 class="text-base font-bold text-primary mb-3">Showroom no Maior Polo Moveleiro</h3>
+                    <p class="text-xs text-stone-500 leading-relaxed">Localizados na icônica Rua Teodoro Sampaio, oferecemos a segurança e robustez de um showroom próprio e operacional pronto para receber você ou seus especificadores parceiros.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seção Interativa: Simulador de Pedidos e Condições Financeiras -->
+    <section id="simulador" class="py-16 bg-primary text-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-10">
+                <span class="text-accent text-xs font-bold uppercase tracking-widest">Calculadora de Parceria Corporativa</span>
+                <h2 class="text-2xl md:text-3xl font-black mt-1">Calcule Suas Margens e Descontos por Volume</h2>
+                <p class="text-xs text-stone-400 mt-2">Ajuste o controle deslizante abaixo de acordo com sua projeção de faturamento ou pedido inicial e conheça seus benefícios logísticos e fiscais.</p>
+            </div>
+
+            <div class="bg-secondary rounded-xl p-6 md:p-8 border border-stone-850 shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Controles -->
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-xs font-bold text-stone-300 uppercase tracking-wider mb-2">1. Selecione o foco de compra:</label>
+                            <div class="grid grid-cols-2 gap-3">
+                                <button type="button" onclick="setSimulateType('moveis')" id="simTypeMoveis" class="bg-accent/15 border-2 border-accent text-white px-3 py-2.5 rounded-md text-xs font-bold tracking-wider transition-all flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-chair text-accent"></i> Móveis Completos
+                                </button>
+                                <button type="button" onclick="setSimulateType('ferragens')" id="simTypeFerragens" class="bg-primary border border-stone-800 text-stone-400 hover:bg-stone-850 px-3 py-2.5 rounded-md text-xs font-bold tracking-wider transition-all flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-wrench text-accent"></i> Ferragens / Peças
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-bold mb-2">
+                                <span class="text-stone-300 uppercase tracking-wider">2. Volume do Pedido Planejado:</span>
+                                <span class="text-accent font-extrabold" id="rangeValue">R$ 2.000</span>
+                            </div>
+                            <input type="range" id="budgetRange" min="2000" max="150000" step="2000" value="2000" oninput="updateSimulation()" class="w-full accent-accent bg-stone-800 h-2 rounded-md appearance-none cursor-pointer">
+                            <div class="flex justify-between text-[10px] text-stone-500 mt-1">
+                                <span>R$ 2.000 (Mínimo B2B)</span>
+                                <span>R$ 150.000+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resultados -->
+                    <div class="bg-[#1f1a17] p-6 rounded-lg border border-stone-800 flex flex-col justify-between">
+                        <div>
+                            <span class="text-[9px] bg-accent/20 text-accent font-extrabold px-2 py-1 rounded-md uppercase tracking-widest">Faixa de Desconto Proposta</span>
+                            <div class="mt-4">
+                                <div class="text-3xl font-black text-white" id="discountPercent">Condições Padrão</div>
+                                <p class="text-xs text-stone-400 mt-1">Margem Estadia de Revenda: <strong class="text-accent" id="resMargin">35% a 45% Bruto</strong></p>
+                            </div>
+                        </div>
+                        
+                        <div class="border-t border-stone-800 pt-4 mt-4 space-y-3">
+                            <div class="flex justify-between text-[11px]">
+                                <span class="text-stone-400">Benefício Logístico:</span>
+                                <span class="font-bold text-white" id="logDetails">FOB Showroom (Pinheiros)</span>
+                            </div>
+                            <div class="flex justify-between text-[11px]">
+                                <span class="text-stone-400">Enquadramento Fiscal:</span>
+                                <span class="font-bold text-white">Simples Nacional (SP)</span>
+                            </div>
+                            <a href="#contato" class="block text-center bg-accent hover:bg-accentHover text-white py-2.5 rounded-md text-xs font-bold uppercase tracking-widest transition-all mt-2 glow-effect">
+                                Garantir Condições deste Lote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prova Social e Números Industriais Reais -->
+    <section class="bg-primary text-white py-12 border-t border-stone-850">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <!-- Dado 1 -->
+                <div class="space-y-1">
+                    <div class="text-3xl md:text-4xl font-black text-accent tracking-tight">16 Anos</div>
+                    <div class="text-[10px] text-stone-400 uppercase tracking-widest font-bold">Fundada em Maio de 2010</div>
+                </div>
+                <!-- Dado 2 -->
+                <div class="space-y-1">
+                    <div class="text-3xl md:text-4xl font-black text-accent tracking-tight">+3.000</div>
+                    <div class="text-[10px] text-stone-400 uppercase tracking-widest font-bold">Projetos Atendidos</div>
+                </div>
+                <!-- Dado 3 -->
+                <div class="space-y-1">
+                    <div class="text-3xl md:text-4xl font-black text-accent tracking-tight">Pinheiros</div>
+                    <div class="text-[10px] text-stone-400 uppercase tracking-widest font-bold">Showroom Físico Próprio em SP</div>
+                </div>
+                <!-- Dado 4 -->
+                <div class="space-y-1">
+                    <div class="text-3xl md:text-4xl font-black text-accent tracking-tight">Simples</div>
+                    <div class="text-[10px] text-stone-400 uppercase tracking-widest font-bold">Facilidade Tributária Nacional</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria Minimalista de Ambientes Hygge -->
+    <section id="galeria" class="py-20 bg-bgLight">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Grade Visual Moveleira (Utiliza fotos de ambientes sofisticados com fallback de segurança) -->
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="h-44 rounded-xl overflow-hidden shadow-md border border-stone-200">
+                            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=400&q=80" alt="Mesa de Centro Estilo Escandinavo" onerror="this.src='https://placehold.co/400x300/f3ede2/332211?text=Lemare+Design'">
+                        </div>
+                        <div class="h-60 rounded-xl overflow-hidden shadow-md border border-stone-200">
+                            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=400&q=80" alt="Poltrona Conforto Hygge" onerror="this.src='https://placehold.co/400x400/f3ede2/332211?text=Poltrona+Lemare'">
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <div class="h-60 rounded-xl overflow-hidden shadow-md border border-stone-200">
+                            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=400&q=80" alt="Ambiente de Escritório Contemporâneo" onerror="this.src='https://placehold.co/400x400/f3ede2/332211?text=Decoracao+Lemare'">
+                        </div>
+                        <div class="h-44 rounded-xl overflow-hidden shadow-md border border-stone-200">
+                            <img class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80" alt="Detalhe de Ferragens Premium" onerror="this.src='https://placehold.co/400x300/f3ede2/332211?text=Ferragens+Lemare'">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Histórico e Solidez Corporativa -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-accent font-extrabold text-xs tracking-widest uppercase">Tradição de São Paulo</span>
+                    <h2 class="text-3xl font-black text-primary tracking-tight">Liderança Moveleira e em Ferragens de Alto Padrão</h2>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Fundada em **05/05/2010**, a **Hygge Comércio de Ferragens, Móveis e Decorações LTDA** (operando comercialmente sob a renomada marca **Lemare Móveis**) consolidou sua matriz comercial e showroom principal no coração do circuito moveleiro de São Paulo: a Rua Teodoro Sampaio, em Pinheiros.
+                    </p>
+                    <p class="text-stone-600 text-sm leading-relaxed">
+                        Unimos a precisão logística de distribuição nacional com uma curadoria incansável de produtos que conversam diretamente com as últimas tendências mundiais de arquitetura residencial e corporativa de alto padrão.
+                    </p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <span class="text-accent text-base"><i class="fa-solid fa-circle-check"></i></span>
+                            <span class="text-xs font-bold text-stone-700">Faturamento simplificado pelo Simples Nacional de forma rápida e segura</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-accent text-base"><i class="fa-solid fa-circle-check"></i></span>
+                            <span class="text-xs font-bold text-stone-700">Showroom físico operacional pronto para visitas de clientes e arquitetos</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-accent text-base"><i class="fa-solid fa-circle-check"></i></span>
+                            <span class="text-xs font-bold text-stone-700">Garantia estendida contra defeitos de fabricação em todas as ferragens técnicas</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Localização Física e Informações Cadastrais Técnicas -->
+    <section id="localizacao" class="py-16 bg-white border-t border-stone-100">
+        <div class="max-w-7xl mx-auto px-4">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-accent font-extrabold text-xs tracking-widest uppercase">Segurança Cadastral & Transparência</span>
+                <h2 class="text-2xl font-black text-primary tracking-tight mt-1">Conformidade Legal para sua Obra ou Comércio</h2>
+                <p class="text-stone-500 text-xs mt-2">Diferente de representantes fantasmas ou exclusivamente digitais, a Lemare Móveis possui sede industrial e comercial sólida aberta ao público.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Informações Tributárias -->
+                <div class="bg-bgLight p-6 md:p-8 rounded-xl border border-stone-100 flex gap-4">
+                    <div class="text-accent text-2xl pt-1">
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </div>
+                    <div>
+                        <span class="bg-stone-200 text-stone-600 text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">Compliance Cadastral</span>
+                        <h3 class="font-bold text-base text-primary mt-2">Dados Tributários e Governança</h3>
+                        <p class="text-xs text-stone-500 mt-2 leading-relaxed">Sociedade Empresária Limitada enquadrada como Microempresa. Optante regular do Simples Nacional a partir do faturamento de 2024, assegurando faturamentos ágeis para outras unidades da federação sem complexidades de substituições tributárias adicionais.</p>
+                        <p class="text-[10px] font-semibold text-stone-400 mt-3">Razão Social: Hygge Comercio de Ferragens Moveis e Decoracoes LTDA • Inscrição Estadual SP: 147.396.072.116 • Capital Social: R$ 99.800,00</p>
+                    </div>
+                </div>
+
+                <!-- Showroom Teodoro Sampaio -->
+                <div class="bg-bgLight p-6 md:p-8 rounded-xl border border-stone-100 flex gap-4">
+                    <div class="text-accent text-2xl pt-1">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <span class="bg-stone-200 text-stone-600 text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">Localização Física</span>
+                        <h3 class="font-bold text-base text-primary mt-2">Pinheiros - São Paulo/SP</h3>
+                        <p class="text-xs text-stone-500 mt-2 leading-relaxed">Localizados nos números 1535 e 1539 da prestigiada Rua Teodoro Sampaio, o maior corredor comercial de marcenaria, mobiliário e design da América Latina. Nosso showroom está aberto de segunda a sábado para visitas técnicas.</p>
+                        <p class="text-[10px] text-stone-400 mt-2">Rua Teodoro Sampaio, 1535 e 1539 • Bairro: Pinheiros • CEP: 05405-150</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ - Perguntas Frequentes de Atacado -->
+    <section class="py-16 bg-bgLight border-t border-stone-100">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-accent text-xs font-bold uppercase tracking-widest">Suporte ao Parceiro Comercial</span>
+                <h2 class="text-2xl font-black text-primary mt-1">Dúvidas Frequentes sobre nossa Operação</h2>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white p-5 rounded-lg border border-stone-200/60 shadow-sm">
+                    <button class="w-full text-left flex justify-between items-center font-bold text-sm text-primary" onclick="toggleFaq(1)">
+                        <span>Como funciona o faturamento faturado ou à vista para lojistas?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-accent"></i>
+                    </button>
+                    <div id="faq-content-1" class="hidden mt-3 text-xs text-stone-500 leading-relaxed border-t border-stone-100 pt-3">
+                        Para o primeiro faturamento B2B, nosso ticket mínimo operacional é de **R$ 2.000,00** à vista (PIX ou transferência bancária). Para compras subsequentes e de maior volume, nossa equipe de análise comercial em São Paulo pode conceder prazos faturados via boleto bancário de 28, 42 ou 56 dias.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-white p-5 rounded-lg border border-stone-200/60 shadow-sm">
+                    <button class="w-full text-left flex justify-between items-center font-bold text-sm text-primary" onclick="toggleFaq(2)">
+                        <span>Posso agendar visitas com meus clientes ao Showroom de Pinheiros?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-accent"></i>
+                    </button>
+                    <div id="faq-content-2" class="hidden mt-3 text-xs text-stone-500 leading-relaxed border-t border-stone-100 pt-3">
+                        Sim, essa é uma das nossas maiores vantagens! Arquitetos e designers parceiros e cadastrados possuem livre acesso para trazer seus clientes finais ao nosso showroom técnico e apresentar os acabamentos de madeira, amostras de ferragens corporativas e texturas de tecidos.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-white p-5 rounded-lg border border-stone-200/60 shadow-sm">
+                    <button class="w-full text-left flex justify-between items-center font-bold text-sm text-primary" onclick="toggleFaq(3)">
+                        <span>Qual é o prazo médio de entrega para outras regiões fora de São Paulo?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-accent"></i>
+                    </button>
+                    <div id="faq-content-3" class="hidden mt-3 text-xs text-stone-500 leading-relaxed border-t border-stone-100 pt-3">
+                        Temos estoque rotativo de peças prontas para despacho imediato com saídas de Pinheiros em até **5 dias úteis** após a confirmação. Para peças sob encomenda ou projetos corporativos estruturados sob medida, o prazo padrão varia entre **20 e 35 dias**.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Call To Action Final (CTA) -->
+    <section class="bg-secondary py-16 text-white text-center">
+        <div class="max-w-4xl mx-auto px-4 space-y-6">
+            <h2 class="text-2xl md:text-3.5xl font-black tracking-tight">Seja Parceiro Comercial do Showroom Lemare</h2>
+            <p class="text-sm text-stone-400 max-w-xl mx-auto">
+                Fale agora com nosso setor de vendas corporativas de Pinheiros via WhatsApp e garanta condições comerciais inigualáveis para o seu próximo lote de produtos.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://wa.me/551130632017?text=Olá! Gostaria de falar com o time comercial da Lemare sobre atacado de móveis e ferragens." class="inline-flex items-center gap-2.5 bg-accent text-white hover:bg-accentHover px-8 py-4 rounded-md font-extrabold text-xs tracking-wider uppercase shadow-2xl transition-all glow-effect" target="_blank">
+                    <i class="fa-brands fa-whatsapp text-base"></i> Atendimento WhatsApp (11) 3063-2017
+                </a>
+                <a href="#contato" class="inline-flex items-center gap-1.5 border border-stone-700 hover:border-stone-500 px-6 py-4 rounded-md font-extrabold text-xs tracking-wider uppercase transition-all">
+                    Solicitar Catálogo Digital
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botão do WhatsApp Flutuante -->
+    <a href="https://wa.me/551130632017?text=Olá! Gostaria de falar com o time comercial da Lemare sobre atacado de móveis e ferragens." class="fixed bottom-6 right-6 bg-emerald-600 hover:bg-emerald-700 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl z-50 transition-all hover:scale-110 animate-bounce" target="_blank" title="Fale com a Lemare Móveis">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Rodapé Completo - Totalmente Conforme com Google Ads Políticas -->
+    <footer class="bg-primary text-stone-500 text-xs py-16 border-t border-stone-850">
+        <div class="max-w-7xl mx-auto px-4">
+            
+            <div class="grid md:grid-cols-12 gap-12 border-b border-stone-850 pb-12 mb-12">
+                <!-- Coluna 1: Dados Jurídicos -->
+                <div class="md:col-span-5 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-gradient-to-br from-[#1c1714] to-[#2e2622] text-white p-2 rounded flex items-center justify-center border border-stone-800">
+                            <i class="fa-solid fa-chair text-xs text-accent"></i>
+                        </div>
+                        <span class="text-xs font-black tracking-widest text-white uppercase">HYGGE COMERCIO DE FERRAGENS LTDA</span>
+                    </div>
+                    <p class="leading-relaxed text-stone-400 text-[11px]">
+                        **Lemare Móveis** • CNPJ: 12.383.505/0001-61 • Matriz São Paulo.<br>
+                        Curadoria, fornecimento e fabricação especializada de móveis de design contemporâneo de padrão escandinavo e importação direta de componentes e ferragens técnicas para alta decoração.
+                    </p>
+                    <p class="text-[9px] text-stone-500">
+                        Regime de Tributação: Simples Nacional (EPP) • Inscrição Estadual SP: 147.396.072.116 • Sede operacional ativa e estabelecida em Pinheiros - SP de forma ininterrupta desde 05/05/2010.
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Faturamento & Suporte -->
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="font-extrabold text-white text-[11px] uppercase tracking-widest">Canais Oficiais</h4>
+                    <ul class="space-y-2 text-stone-400 text-[11px]">
+                        <li><i class="fa-solid fa-phone text-accent mr-1.5"></i> (11) 3063-2017</li>
+                        <li><i class="fa-solid fa-envelope text-accent mr-1.5"></i> mauricio@lemaremoveis.com.br</li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Showroom SP -->
+                <div class="md:col-span-4 space-y-3">
+                    <h4 class="font-extrabold text-white text-[11px] uppercase tracking-widest">Endereço do Showroom</h4>
+                    <p class="leading-relaxed text-[11px] text-stone-400">
+                        Rua Teodoro Sampaio, 1535 e 1539<br>
+                        Bairro: Pinheiros • CEP: 05405-150<br>
+                        São Paulo - SP
+                    </p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Rua+Teodoro+Sampaio+1535+Pinheiros+Sao+Paulo" target="_blank" class="inline-flex items-center gap-1.5 text-accent hover:text-white font-bold mt-1 transition-all">
+                        <i class="fa-solid fa-map-location-dot text-xs"></i> Abrir Localização no Google Maps
+                    </a>
+                </div>
+            </div>
+
+            <!-- Rodapé Legal (Google Ads Requisitos) -->
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-center md:text-left text-[11px] text-stone-500">
+                    &copy; 2026 Lemare Móveis. Todos os direitos reservados. CNPJ: 12.383.505/0001-61.
+                </p>
+                
+                <!-- Links de Políticas Obrigatórias do Google Ads -->
+                <div class="flex items-center gap-4 flex-wrap justify-center text-[11px] text-stone-500 font-bold">
+                    <a href="javascript:void(0)" onclick="openModal('privacy')" class="hover:text-stone-300 transition-all">Política de Privacidade</a>
+                    <span>|</span>
+                    <a href="javascript:void(0)" onclick="openModal('terms')" class="hover:text-stone-300 transition-all">Termos de Uso</a>
+                    <span>|</span>
+                    <a href="javascript:void(0)" onclick="openModal('cookies')" class="hover:text-stone-300 transition-all">Política de Cookies</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Modal Dinâmico de Termos e Políticas (Exigência Google Ads) -->
+    <div id="policyModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-[100] hidden items-center justify-center p-4">
+        <div class="bg-white border border-stone-200 rounded-xl max-w-2xl w-full p-6 md:p-8 max-h-[80vh] overflow-y-auto relative text-stone-800">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-stone-400 hover:text-stone-600 text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 id="modalTitle" class="text-lg font-bold text-primary mb-4 uppercase tracking-wider border-b pb-2"></h3>
+            <div id="modalContent" class="text-xs text-stone-600 leading-relaxed space-y-4"></div>
+        </div>
+    </div>
+
+    <!-- Scripts de Simulação Interativa e Atacado -->
+    <script>
+        // Tipo de simulação atual (móveis ou ferragens)
+        let currentType = 'moveis';
+
+        function setSimulateType(type) {
+            currentType = type;
+            const btnMoveis = document.getElementById('simTypeMoveis');
+            const btnFerragens = document.getElementById('simTypeFerragens');
+            
+            if (type === 'moveis') {
+                btnMoveis.className = 'bg-accent/15 border-2 border-accent text-white px-3 py-2.5 rounded-md text-xs font-bold tracking-wider transition-all flex items-center justify-center gap-1.5';
+                btnFerragens.className = 'bg-primary border border-stone-800 text-stone-400 hover:bg-stone-850 px-3 py-2.5 rounded-md text-xs font-bold tracking-wider transition-all flex items-center justify-center gap-1.5';
+            } else {
+                btnFerragens.className = 'bg-accent/15 border-2 border-accent text-white px-3 py-2.5 rounded-md text-xs font-bold tracking-wider transition-all flex items-center justify-center gap-1.5';
+                btnMoveis.className = 'bg-primary border border-stone-800 text-stone-400 hover:bg-stone-850 px-3 py-2.5 rounded-md text-xs font-bold tracking-wider transition-all flex items-center justify-center gap-1.5';
+            }
+            updateSimulation();
+        }
+
+        function updateSimulation() {
+            const range = document.getElementById('budgetRange');
+            const value = parseInt(range.value);
+            
+            // Formatando em Moeda Real (BRL)
+            document.getElementById('rangeValue').innerText = value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            
+            let discount = 'Condições Padrão';
+            let margin = '35% a 45% Bruto';
+            let logisticsTier = 'FOB Showroom (Pinheiros)';
+            
+            if (value >= 100000) {
+                discount = '20% de Desconto Adicional';
+                margin = '50% a 60% Bruto';
+                logisticsTier = 'CIF (Frete Grátis e Seguro no Lote)';
+            } else if (value >= 50000) {
+                discount = '15% de Desconto Adicional';
+                margin = '45% a 55% Bruto';
+                logisticsTier = 'Frete Subsidiado (Grande SP)';
+            } else if (value >= 15000) {
+                discount = '10% de Desconto Adicional';
+                margin = '40% a 50% Bruto';
+                logisticsTier = 'Despacho Rápido por Transportadora';
+            }
+            
+            if (currentType === 'ferragens') {
+                logisticsTier += ' (Garantia de Assistência Técnica de 2 Anos)';
+            }
+            
+            document.getElementById('discountPercent').innerText = discount;
+            document.getElementById('resMargin').innerText = margin;
+            document.getElementById('logDetails').innerText = logisticsTier;
+        }
+
+        // Accordion do FAQ
+        function toggleFaq(index) {
+            const content = document.getElementById(`faq-content-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Processamento do Lead B2B com redirecionamento de WhatsApp personalizado
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const cnpj = document.getElementById('cnpj').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const segment = document.getElementById('segment').value;
+            
+            const message = `Olá! Meu nome é ${encodeURIComponent(name)}, falo em nome do registro comercial ${encodeURIComponent(cnpj)}. Gostaria de solicitar o catálogo de atacado de ${encodeURIComponent(segment)} da Lemare Móveis.`;
+            const waUrl = `https://wa.me/551130632017?text=${message}`;
+            
+            // Exibição da mensagem amigável de sucesso
+            document.getElementById('leadForm').classList.add('hidden');
+            const successDiv = document.getElementById('successMessage');
+            successDiv.classList.remove('hidden');
+            document.getElementById('successWhatsappLink').setAttribute('href', waUrl);
+        }
+
+        // Textos Regulamentares das Políticas (Compliance obrigatório do Google Ads)
+        const policyTexts = {
+            privacy: {
+                title: "Política de Privacidade",
+                text: `<p>Esta Política de Privacidade estabelece como a Hygge Comércio de Ferragens, Móveis e Decorações LTDA processa os dados corporativos e de contato coletados através deste portal.</p>
+                       <p><strong>1. Coleta e Uso de Informações:</strong> Solicitamos exclusivamente dados corporativos necessários para faturamento e qualificação B2B (tais como CNPJ, Nome do Comprador e Telefone Corporativo). Estas informações nunca são vendidas, compartilhadas ou divulgadas.</p>
+                       <p><strong>2. Armazenamento e Segurança:</strong> Seus dados são salvos de forma confidencial em nossa infraestrutura interna em São Paulo, atendendo de forma integral aos regulamentos de segurança da Lei Geral de Proteção de Dados (LGPD).</p>
+                       <p><strong>3. Seus Direitos:</strong> Você pode solicitar a remoção ou correção integral dos seus contatos de nossas bases comerciais a qualquer momento, enviando um e-mail para mauricio@lemaremoveis.com.br.</p>`
+            },
+            terms: {
+                title: "Termos de Uso",
+                text: `<p>Ao navegar por esta landing page comercial de móveis escandinavos e ferragens de alto padrão, você declara total concordância com as regras comerciais da Lemare Móveis.</p>
+                       <p><strong>1. Canal de Atacado B2B:</strong> O faturamento com descontos industriais, tabelas especiais de lojista e faturamentos a prazo estão condicionados à validação prévia de CNPJ comercial ativo no segmento de decoração ou registro profissional válido (CAU/CREA).</p>
+                       <p><strong>2. Ticket Mínimo Operacional:</strong> Como distribuidores diretos de peças de alto padrão, nosso faturamento mínimo por pedido para manutenção de preços de tabela é de **R$ 2.000,00**.</p>
+                       <p><strong>3. Política Logística:</strong> Nossos envios de mercadorias seguem modalidade FOB padrão (retirada em São Paulo/SP) a menos que explicitado em cotações e contratos comerciais sob o faturamento direto CIF.</p>`
+            },
+            cookies: {
+                title: "Política de Cookies",
+                text: `<p>Usamos tecnologias de monitoramento de tráfego analítico e remarketing (Google Ads Tag, Pixels de Rede Social) para melhorar sua experiência comercial e otimizar nossas campanhas promocionais B2B.</p>
+                       <p><strong>Desativação e Preferências:</strong> Você pode ajustar suas preferências de cookies, assim como recusar o rastreamento, alterando de forma independente as opções de privacidade localizadas nas configurações do seu navegador de internet habitual.</p>`
+            }
+        };
+
+        function openModal(type) {
+            const modal = document.getElementById('policyModal');
+            const titleEl = document.getElementById('modalTitle');
+            const contentEl = document.getElementById('modalContent');
+            
+            titleEl.innerText = policyTexts[type].title;
+            contentEl.innerHTML = policyTexts[type].text;
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('policyModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Inicializa o simulador padrão de faturamento no carregamento
+        window.onload = function() {
+            updateSimulation();
+        }
+    </script>
+</body>
+</html>
